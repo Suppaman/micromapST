@@ -11630,7 +11630,7 @@ if (missing(rowNames) || is.null(rowNames) || is.na(rowNames) )  {
                xlh   <- ceiling(xl/2)                # number of groups to median point.
                grpL  <- grpPattern[1:xlh]            # lower half groups
                grpU  <- grpPattern[(xl-xlh+1):xl]    # upper half groups
-               if ( !all(grpL == sort(grpL,descreasing=TRUE)) || !all(grpU == sort(grpU)) ) {
+               if ( !all(grpL == sort(grpL,decreasing=TRUE)) || !all(grpU == sort(grpU)) ) {
                   # if the sorted order of either half of the groups does not match the 
                   # pattern provided, warning and ignore the grpPattern.
                   warnCnt()
